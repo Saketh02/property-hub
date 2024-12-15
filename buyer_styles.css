@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --background-color: #ecf0f1;
+    --card-background: #ffffff;
+    --text-color: #2c3e50;
+    --muted-text: #7f8c8d;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    padding: 80px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.welcome-note {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.thank-you {
+    text-align: center;
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    position: relative;
+    left: 15%;
+}
+
+.search-container input {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #0044cc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    font-size: 1em;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #002a80;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.property-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.property-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-details {
+    padding: 15px;
+    text-align: center;
+}
+
+.property-details h3 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.property-details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.site-header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; /* Make header sticky */
+    top: 0; /* Stick to top of viewport */
+    left: 0; /* Stretch full width */
+    right: 0; /* Stretch full width */
+    z-index: 1000; /* Ensure header is above other content */
+    height: 50px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.buttons {
+    display: flex;
+}
+.logout-btn, .wishlist-btn, .view-wishlist-btn, .back-button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.view-wishlist-btn, .back-button {
+    position: relative;
+}
+
+.logout-btn:hover, .wishlist-btn:hover, .back-button:hover, .view-wishlist-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.property-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+    position: relative;
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.property-image-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+.property-image-gallery img {
+    height: 150px;
+    border-radius: 5px;
+}
+.modal-details {
+    margin-top: 20px;
+}
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
