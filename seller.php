@@ -103,23 +103,23 @@ while ($img = $images_result->fetch_assoc()) {
                 </div>
                 <div class="form-group">
                     <label>Age (Years)</label>
-                    <input type="number" name="age_years" required>
+                    <input type="number" class="no-scroll" class="no-scroll" name="age_years" required>
                 </div>
                 <div class="form-group">
                     <label>Floor Area (sq. ft)</label>
-                    <input type="number" name="floor_area" required>
+                    <input type="number" class="no-scroll" class="no-scroll" name="floor_area" required>
                 </div>
                 <div class="form-group">
                     <label>Bedrooms</label>
-                    <input type="number" name="bedroom_count" required>
+                    <input type="number" class="no-scroll" class="no-scroll" name="bedroom_count" required>
                 </div>
                 <div class="form-group">
                     <label>Bathrooms</label>
-                    <input type="number" name="bathroom_count" required>
+                    <input type="number" class="no-scroll" class="no-scroll" name="bathroom_count" required>
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="number" name="price" required>
+                    <input type="number" class="no-scroll" class="no-scroll" name="price" required>
                 </div>
                 <div class="form-group">
                     <label>Garden Available</label>
@@ -130,7 +130,7 @@ while ($img = $images_result->fetch_assoc()) {
                 </div>
                 <div class="form-group">
                     <label>Parking Slots</label>
-                    <input type="number" name="car_parking_slots">
+                    <input type="number" class="no-scroll" name="car_parking_slots">
                 </div>
                 <div class="form-group">
                     <label>Proximity</label>
@@ -209,23 +209,23 @@ while ($img = $images_result->fetch_assoc()) {
                 </div>
                 <div class="form-group">
                     <label>Age (Years)</label>
-                    <input type="number" name="age_years" id="editAgeYears" required>
+                    <input type="number" class="no-scroll" name="age_years" id="editAgeYears" required>
                 </div>
                 <div class="form-group">
                     <label>Floor Area (sq. ft)</label>
-                    <input type="number" name="floor_area" id="editFloorArea" required>
+                    <input type="number" class="no-scroll" name="floor_area" id="editFloorArea" required>
                 </div>
                 <div class="form-group">
                     <label>Bedrooms</label>
-                    <input type="number" name="bedroom_count" id="editBedroomCount" required>
+                    <input type="number" class="no-scroll" name="bedroom_count" id="editBedroomCount" required>
                 </div>
                 <div class="form-group">
                     <label>Bathrooms</label>
-                    <input type="number" name="bathroom_count" id="editBathroomCount" required>
+                    <input type="number" class="no-scroll" name="bathroom_count" id="editBathroomCount" required>
                 </div>
                 <div class="form-group">
                     <label>Price</label>
-                    <input type="number" name="price" id="editPrice" required>
+                    <input type="number" class="no-scroll" name="price" id="editPrice" required>
                 </div>
                 <div class="form-group">
                     <label>Garden Available</label>
@@ -236,7 +236,7 @@ while ($img = $images_result->fetch_assoc()) {
                 </div>
                 <div class="form-group">
                     <label>Parking Slots</label>
-                    <input type="number" name="car_parking_slots" id="editParkingSlots">
+                    <input type="number" class="no-scroll" name="car_parking_slots" id="editParkingSlots">
                 </div>
                 <div class="form-group">
                     <label>Proximity</label>
@@ -311,6 +311,14 @@ while ($img = $images_result->fetch_assoc()) {
             window.location.href = 'fetch_reviews.php';
         }
 
+        const numberFields = document.querySelectorAll('.no-scroll');
+  
+        // Attach the 'wheel' event listener to each field
+        numberFields.forEach(field => {
+            field.addEventListener('wheel', function(event) {
+            event.preventDefault();
+            });
+        });
 
         function deleteProperty(id) {
             if(confirm('Are you sure you want to delete this property?')) {
