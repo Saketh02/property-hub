@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Hub</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: #fdfdfd;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('property images/home3.webp') no-repeat center center;
+            background-size: cover;
+            color: #fdfdfd;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .hero h2 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            max-width: 700px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            margin-bottom: 2rem;
+        }
+
+        .hero a {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .hero a:hover {
+            background: #c0392b;
+        }
+
+        /* Main Features */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem auto;
+            max-width: 1200px;
+            padding: 1rem;
+        }
+
+        .features .feature {
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            flex: 1;
+            margin: 0 1rem;
+        }
+
+        .features .feature img {
+            max-width: 100px;
+            margin-bottom: 1rem;
+        }
+
+        .features .feature h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .why-choose-us, .key-features {
+            padding: 2rem 1rem;
+            background: #f9f9f9;
+            text-align: center;
+            margin: 2rem auto;
+        }
+
+        .why-choose-us h2, .key-features h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 300px;
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .why-choose-us img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Property Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Dream Property</h2>
+        <p>Browse, Compare, and Secure Your Next Home With Ease</p>
+        <a href="buyer.php">Get Started</a>
+    </section>
+
+    <!-- Features -->
+    <section class="why-choose-us">
+        <h2>Services We Provide</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="property images/seller.png" alt="Seller Icon">
+                <h3>Seller Dashboard</h3>
+                <p>List and manage your properties efficiently.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/buyer.jpg" alt="Buyer Icon">
+                <h3>Buyer Dashboard</h3>
+                <p>Explore and Search Properties tailored to your needs.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/wishlist.jpg" alt="Wishlist Icon">
+                <h3>Wishlist</h3>
+                <p>Save and Revisit your favorite properties anytime.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/reviews.png" alt="Wishlist Icon">
+                <h3>Reviews</h3>
+                <p>See reviews written by fellow buyers and sellers</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="why-choose-us">
+        <h2>Why Choose Property Hub?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="property images/global-reach.webp" alt="Global Reach Icon">
+                <h3>Wider Reach for Sellers</h3>
+                <p>List your property on a platform with a growing audience of potential buyers. We connect sellers with serious, qualified buyers.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/easy-search.png" alt="Easy Search Icon">
+                <h3>Simple Property Search</h3>
+                <p>Our intuitive search tools allow buyers to filter properties by location, price, and more, making it easy to find the perfect match.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/user-friendly.jpg" alt="User Friendly Icon">
+                <h3>User-Friendly Interface</h3>
+                <p>Whether you're a seller or buyer, Property Hub offers a seamless experience with easy navigation and simple tools for managing listings.</p>
+            </div>
+        </div>
+    </section>
+    <section class="key-features">
+        <h2>Our Key Features</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="property images/property-listings.png" alt="Property Listings Icon">
+                <h3>Property Listings</h3>
+                <p>Our platform allows sellers to easily list properties with photos, descriptions, and key details. Buyers can browse these listings at their convenience.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/advanced-search.jpg" alt="Advanced Search Icon">
+                <h3>Advanced Filtering</h3>
+                <p>Buyers can use our robust filters to narrow down search results based on location, price range, size, and other key factors that matter to them.</p>
+            </div>
+            <div class="feature">
+                <img src="property images/photo-gallery.png" alt="Photo Gallery Icon">
+                <h3>High-Quality Photo Galleries</h3>
+                <p>View multiple high-quality images for each property, giving you a complete visual experience before you visit in person.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Property Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
